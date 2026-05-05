@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Controle de Refeições</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Controle de Refeições</h1>
+</header>
+
+<!-- TELA INICIAL -->
+<main id="telaInicial" class="container centralizado">
+    <button id="btnIniciar" class="botao-principal">
+        Registre sua refeição!
+    </button>
+</main>
+
+<!-- FORMULÁRIO -->
+<main id="telaFormulario" class="container hidden">
+
+    <form id="formRefeicao">
+
+        <label>Matrícula:</label>
+
+        <div class="linha">
+            <input type="text" id="matricula" required>
+            <button type="button" id="btnValidar">Validar</button>
+        </div>
+
+        <div id="nomeUsuario"></div>
+
+        <label>Tipo de Refeição:</label>
+
+        <div class="opcoes-refeicao">
+
+            <label class="card">
+                <input type="radio" name="refeicao" value="cafe" required>
+                <img src="/assets/CAFE.PNG">
+                <span>Café da manhã</span>
+            </label>
+
+            <label class="card">
+                <input type="radio" name="refeicao" value="almoco" required>
+                <img src="/assets/ALMOCO.PNG">
+                <span>Almoço</span>
+            </label>
+
+        </div>
+        <div class="botaoSubmit">
+            <button type="submit" id="btnSubmit">Registrar</button>
+        </div>
+        
+
+    </form>
+
+    <div id="mensagem"></div>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
